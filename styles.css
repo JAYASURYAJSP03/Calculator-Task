@@ -4,11 +4,11 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(179, 209, 209);
+    background-color: rgb(247, 253, 216);
 }
 .calculator{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(182, 250, 254);
+    background-color: rgb(70, 82, 83);
     border-radius: 15px;
     width: 500px;
     overflow: hidden;
@@ -23,7 +23,7 @@ body{
     font-size: 3rem;
     text-align: right;
     border: 1px solid;
-    background-color: rgb(218, 250, 252);
+    background-color: rgb(192, 246, 250);
 }
 .btns{
     display: grid;
@@ -36,25 +36,31 @@ button{
     height: 50px;
     border-radius: 15px;
     border:2px solid;
-    background-color: rgb(214, 245, 253);
+    background-color: rgb(0, 0, 0);
+    color: white;
     font-size: 2rem;
     font-weight: lighter;
     cursor: pointer;
 }
 button:hover{
-    background-color: rgb(198, 220, 250);
+    background-color: rgb(238, 255, 186);
+    color: black;
 }
 button:active{
     background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .operator-btn{
-    background-color: rgb(138, 138, 255);
+    background-color: rgb(47, 7, 132);
+    color: rgb(255, 255, 255);
 }
 .operator-btn:hover{
-    background-color: rgb(175, 175, 254);
+    background-color: rgb(238, 255, 186);
+    color: black;
 }
 .operator-btn:active{
     background-color: rgb(255, 255, 255);
+    color: black;
 }
 @media (min-width:300px) and (max-width:500px){
     .calculator{
