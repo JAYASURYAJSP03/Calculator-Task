@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator Task</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input class="" type="text" id="CalciDisplay" />
+      <div class="btns">
+        <button onclick="DeleteAllElementsInCalciDisplay()" class="operator-btn">AC</button>
+        <button onclick="DeleteLastElementInCalciDisplay()" class="operator-btn">DEL</button>
+        <button onclick="AddElementToCalciDisplay('%')" class="operator-btn">%</button>
+        <button onclick="AddElementToCalciDisplay('/')" class="operator-btn">/</button>
+
+        <button onclick="AddElementToCalciDisplay('7')">7</button>
+        <button onclick="AddElementToCalciDisplay('8')">8</button>
+        <button onclick="AddElementToCalciDisplay('9')">9</button>
+        <button onclick="AddElementToCalciDisplay('*')" class="operator-btn">*</button>
+
+        <button onclick="AddElementToCalciDisplay('4')">4</button>
+        <button onclick="AddElementToCalciDisplay('5')">5</button>
+        <button onclick="AddElementToCalciDisplay('6')">6</button>
+        <button onclick="AddElementToCalciDisplay('-')" class="operator-btn">-</button>
+
+        <button onclick="AddElementToCalciDisplay('1')">1</button>
+        <button onclick="AddElementToCalciDisplay('2')">2</button>
+        <button onclick="AddElementToCalciDisplay('3')">3</button>
+        <button onclick="AddElementToCalciDisplay('+')" class="operator-btn">+</button>
+
+        <button onclick="AddElementToCalciDisplay('0')">0</button>
+        <button onclick="AddElementToCalciDisplay('00')">00</button>
+        <button onclick="AddElementToCalciDisplay('.')">.</button>
+        <button onclick="Evaluation()" class="operator-btn">=</button>
+
+
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
