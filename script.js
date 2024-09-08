@@ -32,8 +32,8 @@ function Evaluation(){
         calciDisplay.value=eval(calciDisplay.value);
     }
     catch(error){
-        calciDisplay.value= "ERROR"; 
         calciDisplay.value.style.color="red";
         calciDisplay.value.style.textAlign="center";
+        calciDisplay.value= "ERROR"; 
     }
 }
