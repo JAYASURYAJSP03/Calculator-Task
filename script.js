@@ -31,7 +31,7 @@ function Evaluation(){
     }
     catch(error){
         calciDisplay.value= "ERROR" ; 
-        calciDisplay.value.style.color="red";
-        calciDisplay.value.style.textAlign="center";
+        calciDisplay.style.color="red";
+        calciDisplay.style.textAlign="center";
     }
 }
