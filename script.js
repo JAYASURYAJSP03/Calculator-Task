@@ -1,10 +1,10 @@
 const calciDisplay=document.getElementById("CalciDisplay");
 
-let value=calciDisplay.value;
+
 
 document.addEventListener("keydown",function (event){
-    calciDisplay.value.style.color="black";
-    calciDisplay.value.style.textAlign="right";
+    calciDisplay.style.color="black";
+    calciDisplay.style.textAlign="right";
     if(event.key=="Enter"){
         Evaluation();
     }
@@ -16,20 +16,20 @@ document.addEventListener("keydown",function (event){
 })
 
 function AddElementToCalciDisplay(input){
-    calciDisplay.value.style.color="black";
-    calciDisplay.value.style.textAlign="right";
     calciDisplay.value += input;
+    calciDisplay.style.color="black";
+    calciDisplay.style.textAlign="right";
 }
 
 function DeleteLastElementInCalciDisplay(){
-    calciDisplay.value.style.color="black";
-    calciDisplay.value.style.textAlign="right";
+    calciDisplay.style.color="black";
+    calciDisplay.style.textAlign="right";
     calciDisplay.value = calciDisplay.value.toString().slice(0,-1);
 }
 
 function DeleteAllElementsInCalciDisplay(){
-    calciDisplay.value.style.color="black";
-    calciDisplay.value.style.textAlign="right";
+    calciDisplay.style.color="black";
+    calciDisplay.style.textAlign="right";
     calciDisplay.value = "";
 }
 
@@ -39,7 +39,7 @@ function Evaluation(){
     }
     catch(error){
         calciDisplay.value= "ERROR"; 
-        calciDisplay.value.style.color="red";
-        calciDisplay.value.style.textAlign="center";
+        calciDisplay.style.color="red";
+        calciDisplay.style.textAlign="center";
     }
 }
