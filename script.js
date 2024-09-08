@@ -28,10 +28,12 @@ function DeleteAllElementsInCalciDisplay(){
 function Evaluation(){
     try{
         calciDisplay.value=eval(calciDisplay.value);
+        calciDisplay.value.style.color="black";
+        calciDisplay.value.style.textAlign="center";
     }
     catch(error){
-        calciDisplay.value= "ERROR" ; 
-        calciDisplay.style.color="red";
-        calciDisplay.style.textAlign="center";
+        calciDisplay.value= "ERROR"; 
+        calciDisplay.value.style.color="red";
+        calciDisplay.value.style.textAlign="center";
     }
 }
