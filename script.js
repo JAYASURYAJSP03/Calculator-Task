@@ -27,9 +27,9 @@ function DeleteAllElementsInCalciDisplay(){
 
 function Evaluation(){
     try{
-        calciDisplay.value=eval(calciDisplay.value);
+        calciDisplay.value.style.textAlign="right";
         calciDisplay.value.style.color="black";
-        calciDisplay.value.style.textAlign="center";
+        calciDisplay.value=eval(calciDisplay.value);
     }
     catch(error){
         calciDisplay.value= "ERROR"; 
